@@ -31,9 +31,22 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Firebase dependencies
+  firebase_core: ^4.0.0
+  firebase_auth: ^6.0.1
+  cloud_firestore: ^6.0.0
+  battery_plus: ^6.0.2
+  font_awesome_flutter: ^10.4.0
+  http: ^1.1.0
+  image_picker: ^0.8.7
+
+
+
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  rename: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -44,7 +57,18 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
+
+  # Package used to generate custom app icons for both Android and iOS
+  flutter_launcher_icons: ^0.13.1
+
+# Configuration for flutter_launcher_icons
+# This block tells the package which platforms to generate icons for
+# and where your logo file is located.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo_mata2.png" # <-- this is your icon image
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,9 +83,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-      
-      
-      - assets/logo_mata1.png
+    - assets/logo_mata1.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -74,7 +96,7 @@ flutter:
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
-  # example:
+  # swe3:
   # fonts:
   #   - family: Schyler
   #     fonts:
